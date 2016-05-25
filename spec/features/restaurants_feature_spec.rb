@@ -25,4 +25,20 @@ feature 'restaurants' do
 
   end
 
+  context 'adding a restaurant' do
+
+    scenario 'adds a new restaurant' do
+      visit '/restaurants'
+      click_link 'Add Restaurant'
+      expect(current_path).to eq '/restaurants/new'
+      fill_in :Name, with: 'Macey\'s Meatballs'
+      fill_in :Rating, with: 5
+      click_button 'Add'
+      expect(current_path).to eq '/restaurants'
+      expect(page).to have_content 'Macey\'s Meatballs'
+      expect(page).to have_content '5'
+    end
+
+  end
+
 end
