@@ -50,6 +50,43 @@ feature 'restaurants' do
       expect(page).to have_content 'Meatballs'
       expect(current_path).to eq "/restaurants/#{meatballs.id}"
     end
+
+    scenario 'user can navigate back to restaurants list' do
+      visit '/restaurants'
+      click_link 'Meatballs'
+      click_link 'Back'
+      expect(current_path). to eq "/restaurants"
+    end
+  end
+
+  context 'updating a restaurant' do
+
+    before { Restaurant.create name: 'Meatballs', description: 'Best meatballs'}
+
+    scenario 'a user can update a restaurant' do
+      visit '/restaurants'
+      click_link 'Edit Meatballs'
+      fill_in :Name, with: 'Meatballs 2'
+      fill_in :Description, with: 'Legit meatballs lol'
+      click_button 'Update restaurant'
+      expect(page).to have_content 'Meatballs'
+      expect(page).to have_content 'Legit meatballs lol'
+    end
+
+  end
+
+  context 'deleting a restaurant' do
+
+    before { Restaurant.create name: 'Meatballs', description: 'Best meatballs'}
+
+    scenario 'removes a restaurant when a user clicks a delete link' do
+      visit '/restaurants'
+      click_link 'Delete Meatballs'
+      expect(page).not_to have_content 'Meatballs'
+      expect(page).to have_content 'Restaurant deleted'
+    end
+
+    
   end
 
 end

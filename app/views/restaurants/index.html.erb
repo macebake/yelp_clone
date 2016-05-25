@@ -4,6 +4,8 @@
   <% @restaurants.each do |restaurant| %>
     <%= link_to restaurant.name, restaurant %>:
     <%= restaurant.rating %> stars <p>
+    <%= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant) %> <p>
+    <%= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete %> <p>
   <% end %>
 <% end %>
 

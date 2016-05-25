@@ -1,0 +1,10 @@
+<%= form_for @restaurant do |field| %>
+  <%= field.label :name %>
+  <%= field.text_field :name %>
+  <%= field.label :rating %>
+  <%= field.number_field :rating %>
+  <%= field.label :description %>
+  <%= field.text_field :description %>
+
+  <%= field.submit 'Update restaurant' %>
+<% end %>
