@@ -2,8 +2,8 @@
   <p> No restaurants found </p>
 <% else %>
   <% @restaurants.each do |restaurant| %>
-    <p> <%= restaurant.name %> </p>
-    <p> <%= restaurant.rating %> </p>
+    <%= link_to restaurant.name, restaurant %>:
+    <%= restaurant.rating %> stars <p>
   <% end %>
 <% end %>
 
