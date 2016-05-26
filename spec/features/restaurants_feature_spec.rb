@@ -86,6 +86,17 @@ feature 'restaurants' do
       expect(page).to have_content 'Restaurant deleted'
     end
 
+    scenario 'can delete a restaurant with a review' do
+      visit '/restaurants'
+      click_link 'Review Meatballs'
+      fill_in :Thoughts, with: 'Great'
+      select 4, from: 'Rating'
+      click_button 'Add review'
+      click_link 'Delete Meatballs'
+      expect(page).to have_content 'Restaurant deleted'
+      expect(page).not_to have_content 'Meatballs'
+    end
+
   end
 
   context 'an invalid restaurant' do
