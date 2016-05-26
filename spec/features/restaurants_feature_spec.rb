@@ -86,7 +86,23 @@ feature 'restaurants' do
       expect(page).to have_content 'Restaurant deleted'
     end
 
-    
   end
+
+end
+
+feature 'reviewing' do
+
+  before { Restaurant.create name: 'Meatballs' }
+
+  scenario 'allows users to leave a review using a form' do
+    visit '/restaurants'
+    click_link 'Review Meatballs'
+    fill_in 'Review', with: 'Pretty great lol'
+    select 4, from: 'Rating'
+    click_button 'Leave review'
+    expect(current_path).to eq '/restaurants'
+    expect(page).to have_content 'Pretty great lol'
+  end
+
 
 end
