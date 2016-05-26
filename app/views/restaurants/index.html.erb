@@ -1,0 +1,13 @@
+<% if @restaurants.empty? %>
+  <p> No restaurants found </p>
+<% else %>
+  <% @restaurants.each do |restaurant| %>
+    <%= link_to restaurant.name, restaurant %>:
+    <%= restaurant.rating %> stars <p>
+    <%= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant) %> <p>
+    <%= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete %> <p>
+    <%= link_to "Review #{restaurant.name}", new_restaurant_review_path %>
+  <% end %>
+<% end %>
+
+<%= link_to 'Add Restaurant', new_restaurant_path %>

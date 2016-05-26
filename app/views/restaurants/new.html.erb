@@ -1,0 +1,7 @@
+<%= form_for :restaurant, url: restaurants_path do |field| %>
+  <%= field.label :name %>
+  <%= field.text_field :name %>
+  <%= field.label :rating %>
+  <%= field.number_field :rating %>
+  <%= field.submit 'Add' %>
+<% end %>
