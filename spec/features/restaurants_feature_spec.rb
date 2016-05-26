@@ -88,6 +88,17 @@ feature 'restaurants' do
 
   end
 
+  context 'an invalid restaurant' do
+    it 'does not let you submit a name that is too short' do
+      visit '/restaurants'
+      click_link 'Add Restaurant'
+      fill_in 'Name', with: 'kf'
+      click_button 'Add'
+      expect(page).not_to have_css 'h2', text: 'kf'
+      expect(page).to have_content 'error'
+    end
+  end
+
 end
 
 feature 'reviewing' do
@@ -104,6 +115,5 @@ feature 'reviewing' do
     click_link 'Meatballs'
     expect(page).to have_content 'Pretty great lol'
   end
-
 
 end
