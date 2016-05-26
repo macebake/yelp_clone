@@ -97,10 +97,11 @@ feature 'reviewing' do
   scenario 'allows users to leave a review using a form' do
     visit '/restaurants'
     click_link 'Review Meatballs'
-    fill_in 'Review', with: 'Pretty great lol'
+    fill_in 'Thoughts', with: 'Pretty great lol'
     select 4, from: 'Rating'
-    click_button 'Leave review'
+    click_button 'Add review'
     expect(current_path).to eq '/restaurants'
+    click_link 'Meatballs'
     expect(page).to have_content 'Pretty great lol'
   end
 
