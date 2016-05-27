@@ -128,3 +128,65 @@ feature 'reviewing' do
   end
 
 end
+
+feature 'limits on user actions' do
+
+  context 'when not signed in' do
+
+    scenario 'should not be able to see Add restaurant link' do
+      visit '/restaurants'
+      expect(page).not_to have_content 'Add Restaurant'
+    end
+
+    scenario 'should not be able to add a restaurant from /new path' do
+      visit '/restaurants/new'
+      fill_in :Name, with: 'Alex\'s Pizza Palace'
+      fill_in :Rating, with: 4
+      click_button 'Add'
+      expect(page).to have_content 'Must be signed in'
+      expect(page).not_to have_content 'Alex\'s Pizza Palace'
+    end
+
+    xscenario 'should not be able to add a review' do
+
+    end
+
+  end
+
+  context 'when signed in' do
+
+    scenario 'can only see edit link for restaurants they have created' do
+      sign_up_user_1
+      add_restaurant
+      click_link 'Sign out'
+      sign_up_user_2
+      expect(page).not_to have_content 'Edit Popeyes'
+    end
+
+    scenario 'cannot edit restaurants they have not created from /update' do
+      sign_up_user_1
+      add_restaurant
+      click_link 'Sign out'
+      sign_up_user_2
+      visit '/restaurants/1/edit'
+      fill_in :Name, with: 'KFC'
+      fill_in :Rating, with: 4
+      fill_in :Description, with: 'Legit chicken'
+      click_button 'Update restaurant'
+      expect(page).not_to have_content 'KFC'
+      expect(page).to have_content 'You do not have permission to edit this restaurant'
+    end
+
+    scenario 'can only leave one review per restaurant' do
+      
+    end
+
+    scenario 'can only delete their own reviews' do
+
+    end
+
+  end
+
+
+
+end

@@ -2263,3 +2263,1551 @@ ActionController::RoutingError (uninitialized constant Users):
   Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:43:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 336ms (Views: 316.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:43:23 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:43:23 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQAxhUQBs05loE9NJtBgFMHQPuxYFMNI_mE9sMfK21x21DfzF0C7ESXbA1ZinI3NfbBiEwjgHGUcHC7T2YucDkFszp0HkRBZQ9rLtu451npEvaXywPvvSn-8Fff63Tc4Pdr___ysbyaE3wdGCFxPREwv7YbJshzu2VsBtymoQ_UAXKJChP0a6PuQaWGpZwesGLkRIBBnYbccNhycUjIZRZF-6uw7Kuu76lzDxPUk3N1KxKeQzwgwm2qpj99PxpYMHOOLy_D4YUpDpt0pILPfjHPwSomuBvPuvdJ8hVQ_M3XEmESe8LOTau5L24mSeKxcPQX5ckC8ypgAQQo5NMdHsMIr&state=854cf1112f6fab896a0df6a44add564c62143173782d9585" for ::1 at 2016-05-27 09:43:24 +0100
+
+ActionController::RoutingError (uninitialized constant Users):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:408:in `call_app!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (132.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:46:47 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 57ms (Views: 43.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for ::1 at 2016-05-27 09:47:05 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IpCRVBeWeAYKOuIJOhGs+DQmFkkCOng7mo8z2/1CBAN+Or1eRt5NKdqyKVG0uB+zYwv5NHnZv+8Kyuyhhlt7eA==", "user"=>{"email"=>"macebake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (2.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["email", "macebake@gmail.com"], ["encrypted_password", "$2a$10$AdrwbOo1ddaCjsKZquuOn.wLl7kczZuf/GUQc8Hrb8ErsDclHOh2m"], ["created_at", "2016-05-27 08:47:05.851370"], ["updated_at", "2016-05-27 08:47:05.851370"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2016-05-27 08:47:05.855000"], ["current_sign_in_at", "2016-05-27 08:47:05.855000"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2016-05-27 08:47:05.856180"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:47:05 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-05-27 09:47:11 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6bULT4z7+1EeojDZBaQnLJgmg6l48V9njQIa3DzBGTy1HydF3bPOfs4q+4GLDZRnzwts1AMSmLMdR8WmR9hmRw=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:47:11 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:47:20 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:47:20 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQChM1n65sujbxLZK61kV34MHd_mJxfoarHOUjyjT1JFv9etwksmfz5UcXWdG3otO7rnD2EZW6E0PyZb4tl7-aVe_LgjVgecJ3qEPdybSXMajN-V-rfkblyY34uN21Measo2d-Gn2Y_FUB-pCXYLOLPLi1SAnGs6V5YYhM7FDeNMcgr9d2Y2Zf1gYs9rdubDpru1sFz1F7IaertojpOvvWUEHlOBLDx-i5Utzz8aBNe4zHhkBdju_qwy55pt_LMuwMusZUUh-XiEIO8vofk87yBllxCR_Cfv7OMmoAIFGlL8bbytKryYbiTyHzo4vx9xa2qX9ckyvQVqPcjuYYaofRTB&state=51f295c774d8efceb592a840d565f6b6d7156075989f28a9" for ::1 at 2016-05-27 09:47:20 +0100
+
+ActionController::RoutingError (uninitialized constant Users):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:408:in `call_app!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.7ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:53:17 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:53:19 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:53:19 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQDzHbZyH2YAYRGvcXKkfgxPzxZttXUgMp1c-sCL2H1a5F-3Sl22gX97En0kPYSUSAOpzw1GdBVcmJITrepjp0g14XmkkaVKsoUG0NXN6oQQhlJ5a1MQG7o6p6q0eHkUFh-7kkVZ2aKjbzTwlOXKAW6lQ8RFwmnrq7TTRQQoEhpw6VGaM8JGEwC1bVbQ8RQqTrINlWzyAjl7yJ5bb3Z-HUYUCQYz3z4Vga0EZsg3Z2UYYFx_NawzTog-THbHN1xIxIdl8goUu8UsGlnADjMx0I3ezwmz5KyIluKHXtsKtrSf_XYXk2rB0ES4-EL9E4Z7EbMk-bV4eS-TdzfAPhwSu6Iw&state=6a03d8eea6ae3233006e5199d1dc93632f0ae70dc4467bc0" for ::1 at 2016-05-27 09:53:19 +0100
+
+ActionController::RoutingError (uninitialized constant Users):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:408:in `call_app!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:53:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 336ms (Views: 315.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:53:36 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:53:36 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQAIdVrQbcvVMltE4wUQChxFGicOc961uY_kF5WwnVriIpytVAp_ma_ZhUR0uJOxd9pkSY5il3TsGdmcU8ENeah6tE-mwb5OsrNCNpt7d9xsfdIy9gQCGnP7aW7J4hASE3eFZWrE3CqHLlccNkUOQaiI2CELtB6QY4Y8KyXhLk7mhHEOsTiayIuFr_JIpbAVq7e2Rc3SRFGG9bf5ZilG8szvODmqJ-s8gJBaORAicxTmHrjKon1CE7NyVvbQ_Fw2kqeJZIuYFyHnBrmEpsGESLFLrMqCfHJN7uF6Jb6Yr2A0GaANxB48NJlmV2FanKwGO2TeJK_LbGZKdvf18Bw48qcc&state=7307645e1ef807500abac6689384be0ba1f84f42bc685b5f" for ::1 at 2016-05-27 09:53:36 +0100
+
+ActionController::RoutingError (uninitialized constant Users):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:408:in `call_app!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:54:02 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:17 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:17 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQCLpqTddXtQQmYxuj4HFXk4OW6kpgy9ZejOHDeCb17TZ7PF4Hqxmr3uIGyHNaCk-F1rvCaILoMxRze_H60d4ucDxUaw-t89Ue5cSFg89wyyc_bpluPyDuBkSidywYwemkMyWAh9GjXUFuc6GYlRmaHSQWtnv2p7vywXf7nRmDbLq_whHIUHs-nsGXi3f8opbEZ4cBe0o2n4UrHmBFGOR_739S59MdlT-n9gUKHLNYvUx5Mm0Pw48UA9M7jxzHowIoFx17Bmyz264R6VC5PNZKRpL_Z7jlwL2YRnW1g9yFb5Mlma-1k5hRH0Isazo30TZOtp0riamIlNjk71kOc2xtIc&state=3f7e0e72b6988f9aa2071aaeb8812eed68fa2c7409f98354" for ::1 at 2016-05-27 09:54:17 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCLpqTddXtQQmYxuj4HFXk4OW6kpgy9ZejOHDeCb17TZ7PF4Hqxmr3uIGyHNaCk-F1rvCaILoMxRze_H60d4ucDxUaw-t89Ue5cSFg89wyyc_bpluPyDuBkSidywYwemkMyWAh9GjXUFuc6GYlRmaHSQWtnv2p7vywXf7nRmDbLq_whHIUHs-nsGXi3f8opbEZ4cBe0o2n4UrHmBFGOR_739S59MdlT-n9gUKHLNYvUx5Mm0Pw48UA9M7jxzHowIoFx17Bmyz264R6VC5PNZKRpL_Z7jlwL2YRnW1g9yFb5Mlma-1k5hRH0Isazo30TZOtp0riamIlNjk71kOc2xtIc", "state"=>"3f7e0e72b6988f9aa2071aaeb8812eed68fa2c7409f98354"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 129ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:54:17 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:20 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:20 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQDMXApsX5gUFu2PoaAzV4jfrXnSImn24NrF_KR-ZTYLT5hiaXJ5Tk1d_p72GzONbmNmcrkVBeIOVewhNmYQOqITwYr9OdhIv-kf8dscrm32NryS8n0HXbKBPOusliXJ7SQ0uMvSztDa--Ewk4LBjUxEQLMHF9NeZNWNx2hL3sDMZvmTnxjmATWtybBrG5pErKF-nDitO7LgmF4JVDDR-k2Fap6m8L4ZAEl_7KWlMuTzBlqkgK3KWwAOfq9NKjpBNybLgpscaYZADU0jmUlmIfEbPhW4B9oaq3cloHlbQhoIiUAdc67N-OjsNIjEirutP6hZB1wE626lL-BFK9XapOlg&state=cb1a4447c6de7d89873d124dcc5db2f92c1fcdc5c5fb9d39" for ::1 at 2016-05-27 09:54:20 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDMXApsX5gUFu2PoaAzV4jfrXnSImn24NrF_KR-ZTYLT5hiaXJ5Tk1d_p72GzONbmNmcrkVBeIOVewhNmYQOqITwYr9OdhIv-kf8dscrm32NryS8n0HXbKBPOusliXJ7SQ0uMvSztDa--Ewk4LBjUxEQLMHF9NeZNWNx2hL3sDMZvmTnxjmATWtybBrG5pErKF-nDitO7LgmF4JVDDR-k2Fap6m8L4ZAEl_7KWlMuTzBlqkgK3KWwAOfq9NKjpBNybLgpscaYZADU0jmUlmIfEbPhW4B9oaq3cloHlbQhoIiUAdc67N-OjsNIjEirutP6hZB1wE626lL-BFK9XapOlg", "state"=>"cb1a4447c6de7d89873d124dcc5db2f92c1fcdc5c5fb9d39"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 82ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:54:21 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:26 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:27 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQA-jhwevdi8gOReYjHphif7QNhs8a_CE8KN2HyXB6YAORrneEWXwhkbJJR4Fxb5xSN2eiVa_e3XeRZdzQ8jSEKghpPMq-D5eGc91A44mdgBTDccoqI4JkDCCB2WwZ7WIhcmufZw_yaB9M01PR3im0rAL3HW8VjSnQIu-mi2Uhtja-CjnhLxuO2wjW0GU2QkW7-6RIXUydpniRgE5yBSPOr3kuWvgAzXw4DfVA7F31TQVqi0KIicVTU5lNN6VVZT4qILXrmm5dJvp7FpG-ARRcF8izkEtHd4m1OI5CafDcBvW3PxjMVxqAhghwMJWqcn0oPIH1o7UbMqa7Sq_fbmyjOt&state=6d6a3dadeddacbe336b8b5729410d6aff3cf47bd88e5ef68" for ::1 at 2016-05-27 09:54:27 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA-jhwevdi8gOReYjHphif7QNhs8a_CE8KN2HyXB6YAORrneEWXwhkbJJR4Fxb5xSN2eiVa_e3XeRZdzQ8jSEKghpPMq-D5eGc91A44mdgBTDccoqI4JkDCCB2WwZ7WIhcmufZw_yaB9M01PR3im0rAL3HW8VjSnQIu-mi2Uhtja-CjnhLxuO2wjW0GU2QkW7-6RIXUydpniRgE5yBSPOr3kuWvgAzXw4DfVA7F31TQVqi0KIicVTU5lNN6VVZT4qILXrmm5dJvp7FpG-ARRcF8izkEtHd4m1OI5CafDcBvW3PxjMVxqAhghwMJWqcn0oPIH1o7UbMqa7Sq_fbmyjOt", "state"=>"6d6a3dadeddacbe336b8b5729410d6aff3cf47bd88e5ef68"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 82ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:54:27 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:34 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:34 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQCzX1frE7mipTAwgJKJJFQSwA35S1ov4MMGDP1E2m8_0mViOus5lDVxNlIHQfF87Cjy7O9PzahjKxb2yg71kzMaZGfeXaNLQtZAsz4_xVMBEn6VEyfGDgNSRLn6r1YjBE0wI7X1xIBoF86NtawfT_2b10qshjSLRreJEk6qiTLgs-UhPopuBuLfhJ7XzNEzT59Zy6PBLZGyMFhO4PQkpo6y7fvGwe9cvFKrcswuD32zYAu7lmmXawNf8-cTsBWa4bePKlhr13OrfccKiuT8Im7qa1L8RsOqaYi7n0lvZXwkl5CjMCq9JAbq7tMxliNj8WIyGrChsaaHGJN6dIxkJuxm&state=f83cd59b2d656d9e0c97e97aa459ec6a8c43d545f80fd7b1" for ::1 at 2016-05-27 09:54:34 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCzX1frE7mipTAwgJKJJFQSwA35S1ov4MMGDP1E2m8_0mViOus5lDVxNlIHQfF87Cjy7O9PzahjKxb2yg71kzMaZGfeXaNLQtZAsz4_xVMBEn6VEyfGDgNSRLn6r1YjBE0wI7X1xIBoF86NtawfT_2b10qshjSLRreJEk6qiTLgs-UhPopuBuLfhJ7XzNEzT59Zy6PBLZGyMFhO4PQkpo6y7fvGwe9cvFKrcswuD32zYAu7lmmXawNf8-cTsBWa4bePKlhr13OrfccKiuT8Im7qa1L8RsOqaYi7n0lvZXwkl5CjMCq9JAbq7tMxliNj8WIyGrChsaaHGJN6dIxkJuxm", "state"=>"f83cd59b2d656d9e0c97e97aa459ec6a8c43d545f80fd7b1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 90ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:54:35 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:50 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:54:51 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQBK6i2ZjKLIMh0FRZBvXSTGj-pJ4vMxt8SLsEFYAcqwVhmgjitzM37cHOh3RK-XmGQ40W7CzBpgQlMaTaB80tyiF5tC3jnDBwLw6sWX_Cc5n9D0tUozZKHnYw_2D7xblSgyYJfCARJfmrjaGPklxn3r1rSydyHnXgL_htIga2HNDER2iuYU0-BbZVSD7JhR_V41gfA0lrsxX5a_b8JhNg7tT-nzDhwqSkUalS8n2NNbFGcOrWNUSD3_W8v842XXUeofKjhUCklq9lL3Utm1Ypj9ysdCdYydGy2yRA9l6RuocrvRmhvJg3SE10jrXiu5-KNkXpRoJrhUDvcIiPECVt42&state=ce9f6be584f39b2c32d0464bb23bf4754005a6f74a2266d5" for ::1 at 2016-05-27 09:54:51 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBK6i2ZjKLIMh0FRZBvXSTGj-pJ4vMxt8SLsEFYAcqwVhmgjitzM37cHOh3RK-XmGQ40W7CzBpgQlMaTaB80tyiF5tC3jnDBwLw6sWX_Cc5n9D0tUozZKHnYw_2D7xblSgyYJfCARJfmrjaGPklxn3r1rSydyHnXgL_htIga2HNDER2iuYU0-BbZVSD7JhR_V41gfA0lrsxX5a_b8JhNg7tT-nzDhwqSkUalS8n2NNbFGcOrWNUSD3_W8v842XXUeofKjhUCklq9lL3Utm1Ypj9ysdCdYydGy2yRA9l6RuocrvRmhvJg3SE10jrXiu5-KNkXpRoJrhUDvcIiPECVt42", "state"=>"ce9f6be584f39b2c32d0464bb23bf4754005a6f74a2266d5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 86ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:54:51 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:55:14 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 339ms (Views: 320.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:55:15 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:55:16 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQBLw0FXV6-oJEQ3_F6X02Ia2K3315R3vxtBxG3cxmZa88e1ly7oGyksDiU-MucvOvb9eSZyHu69kY7ZxIzWq9GSGhMlzyXGrXv-cnjN-RqCYj3wIv5xVefbfKypI2yzLocytSsWYm3bnGhI1TYLJii9WxsMfaoqyW4GXrdhSDg7f_Ywi3zPrMFmPd4OhncEJKHEIWLNt2xcfQiOESUVivuzHEtmOgjAstR-7WyR76kyILR3Ksd-9szr2wvMdxhJJ2Olk9AHC4j5pxpg0WG3hVlvwn-Hc54Rl5Hxx4t4LyiDoo_7lIYXvkdk03AX8u2XRGnlvdfwNdzTBHZhymVGfMfp&state=2b24b751c4badbbd09dc89144c6a2534ef7ecf10c8051d20" for ::1 at 2016-05-27 09:55:16 +0100
+
+LoadError (Unable to autoload constant Users::OmniauthCallbacksController, expected /Users/maceybaker/Desktop/makers/yelp_clone/app/controllers/users/omniauth_callbacks_controller.rb to define it):
+  activesupport (4.2.6) lib/active_support/dependencies.rb:495:in `load_missing_constant'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:408:in `call_app!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/maceybaker/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:56:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 338ms (Views: 318.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:56:44 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:56:45 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQA_8_aEDu-N-_DhtlbIYXUvIaSIafRIxGqmAHhkwzzOppIz-x6rOBv7iSeAEfhN-LpqEeHnI8e0uPkPHKj1dYWQ6IrHYcR9AMh8sVfpkfLyBV0lf2meMfnxNrHYwDAS5hstvN5Hz3kUnv0JM1qdhMZwgV_3DiRS6yGbjEzttKV_1bbTHH7We2JWb961yIqVoxe22gUO8hBnSED2WpNx6RQUse3574N5pmp0Y6WSfMqU0w53NhXzz0-e1RCLEmu7LpnY_RV3cbOhtNhXdp7JylfqCeHhvcQSdF0C_3OE19bIQ0KCM_g7V3IfvcVmF_YcDco4UAiXItTf0JIOhKt5m2ou&state=ed28fe01ef6b32da5674507931c1548646f692ea2f8f0bff" for ::1 at 2016-05-27 09:56:45 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA_8_aEDu-N-_DhtlbIYXUvIaSIafRIxGqmAHhkwzzOppIz-x6rOBv7iSeAEfhN-LpqEeHnI8e0uPkPHKj1dYWQ6IrHYcR9AMh8sVfpkfLyBV0lf2meMfnxNrHYwDAS5hstvN5Hz3kUnv0JM1qdhMZwgV_3DiRS6yGbjEzttKV_1bbTHH7We2JWb961yIqVoxe22gUO8hBnSED2WpNx6RQUse3574N5pmp0Y6WSfMqU0w53NhXzz0-e1RCLEmu7LpnY_RV3cbOhtNhXdp7JylfqCeHhvcQSdF0C_3OE19bIQ0KCM_g7V3IfvcVmF_YcDco4UAiXItTf0JIOhKt5m2ou", "state"=>"ed28fe01ef6b32da5674507931c1548646f692ea2f8f0bff"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 168ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:56:45 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:56:56 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:56:57 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQAi9NEJlSNJ6BEbcjwedJaJgY-WYTVnjENtchiqCaJIo6K8zoFeOAISASRB9BqxCUZ55b3wfnC7tV5OM58jVoB4Y-leM8DY7ZrVwgONLbONaapt77HvP6PtW7aIqVhCS-OeLwD7c2o7uWbREbwraOQsxuL55S4RNNwK5ZydRK1T8qt6E-QtsGW0Bj6VmM17CgvzKJeS5zq3AEtxPG7p4HbVT7jVrkkRGP0T7RqpwHvOC6UuxcqqeKZ28Emgd6fkBeG7HUHjHQjQGoEZ5aB8H5i1u5x2Nb3cjyo2fS_xtDlVn3c1G2XrzzOydpN4cLa1cWaU3QLo_HGHpBAXaIOzT3JW&state=8c79e7a0abb593ba90ffec2f17fa8b6e9a828ffd61f7c6e6" for ::1 at 2016-05-27 09:56:57 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAi9NEJlSNJ6BEbcjwedJaJgY-WYTVnjENtchiqCaJIo6K8zoFeOAISASRB9BqxCUZ55b3wfnC7tV5OM58jVoB4Y-leM8DY7ZrVwgONLbONaapt77HvP6PtW7aIqVhCS-OeLwD7c2o7uWbREbwraOQsxuL55S4RNNwK5ZydRK1T8qt6E-QtsGW0Bj6VmM17CgvzKJeS5zq3AEtxPG7p4HbVT7jVrkkRGP0T7RqpwHvOC6UuxcqqeKZ28Emgd6fkBeG7HUHjHQjQGoEZ5aB8H5i1u5x2Nb3cjyo2fS_xtDlVn3c1G2XrzzOydpN4cLa1cWaU3QLo_HGHpBAXaIOzT3JW", "state"=>"8c79e7a0abb593ba90ffec2f17fa8b6e9a828ffd61f7c6e6"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 83ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:56:57 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:56:58 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:56:58 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQDYeUo_Byk9ZC5smqDOmdj9n8PagqGSRGp-U0q9fF6XkkDnebn1J-VnH7rBQ1SHZPErE1GJfhunp5ZzkwvUXErtr2rfTGi4LYageL7bAc2tBe-ysAzWZefApJ7jEHMIHhGQpU-6C5U-nzBBQH1_oKT4EQxjY1WACkGVzyfyN9qbDIt8fAamvGpHDtoUu0d1JDijJzIOUjLU1wbG2iMq49NGo3UhqixVA-rNAgr97iZZlwuNgLivRM3Q8bw38CdDzxLOdPRkzwjfzeu6TpblKCJ6Y8FG0blNGtuokz_A6BSkNltZvl5vkmIFXWZw43zBNEd4-cuM4uie1hrt3y1wwOxW&state=a19483b28b60028e42f7c4690681730c11cc165ec9b92127" for ::1 at 2016-05-27 09:56:58 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDYeUo_Byk9ZC5smqDOmdj9n8PagqGSRGp-U0q9fF6XkkDnebn1J-VnH7rBQ1SHZPErE1GJfhunp5ZzkwvUXErtr2rfTGi4LYageL7bAc2tBe-ysAzWZefApJ7jEHMIHhGQpU-6C5U-nzBBQH1_oKT4EQxjY1WACkGVzyfyN9qbDIt8fAamvGpHDtoUu0d1JDijJzIOUjLU1wbG2iMq49NGo3UhqixVA-rNAgr97iZZlwuNgLivRM3Q8bw38CdDzxLOdPRkzwjfzeu6TpblKCJ6Y8FG0blNGtuokz_A6BSkNltZvl5vkmIFXWZw43zBNEd4-cuM4uie1hrt3y1wwOxW", "state"=>"a19483b28b60028e42f7c4690681730c11cc165ec9b92127"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 85ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:56:59 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:57:35 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:57:35 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQAKJitszyJu7zRKtcFMdHtVjTZZ7DJXoBwxvTVYsU2G1Eu3w-nzzd9Dnf6UleNoqHKrOktJ6_zAtICiItJs6e_uDtgAxfs3l58Sfy5Ew3fp9torHC8MvbJgYEigTtSGB5Ghq_u1m34HHdwRMpPnVf4jIqtPXOppdL0K4HAVjdV17wB_xFiqOaLUAKcHhya7R4OmGvPjFTEJ7yTDfdr_o29tokIDvVFku4SW-LbmgkBbNNahmFJti86qMNWUU3SjDMMQfwmUEVvGEBqC3woOuVcsEJBb2mKylRi3o9Guk-hHNxddiLzqQ9KyGPzb1OvMyVXlH6bm-FOSqv7D26XdYTQD&state=03d7d785819b3c1cb72b9c6b7aabf2549ca77376b23ae0b4" for ::1 at 2016-05-27 09:57:35 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAKJitszyJu7zRKtcFMdHtVjTZZ7DJXoBwxvTVYsU2G1Eu3w-nzzd9Dnf6UleNoqHKrOktJ6_zAtICiItJs6e_uDtgAxfs3l58Sfy5Ew3fp9torHC8MvbJgYEigTtSGB5Ghq_u1m34HHdwRMpPnVf4jIqtPXOppdL0K4HAVjdV17wB_xFiqOaLUAKcHhya7R4OmGvPjFTEJ7yTDfdr_o29tokIDvVFku4SW-LbmgkBbNNahmFJti86qMNWUU3SjDMMQfwmUEVvGEBqC3woOuVcsEJBb2mKylRi3o9Guk-hHNxddiLzqQ9KyGPzb1OvMyVXlH6bm-FOSqv7D26XdYTQD", "state"=>"03d7d785819b3c1cb72b9c6b7aabf2549ca77376b23ae0b4"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 85ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:57:35 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 09:57:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 324ms (Views: 304.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:57:54 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 09:57:55 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQDLIzh4WJEKbkiNjckhFVUX1amb1neRjyBqKlT1sXFyW1MmSdAs5mpnmfammmxE2zakdrybaxEa06BZWEES43ev2qezQys_rTha92FB5eCbfxaCtb0-2TtdBBJJd-h9TYWly7Vv34owXVWiSwtjjplP0Grp073j_mU_wUS87khlhu687K17MYha9brOqTA89qYm_xd0RJFqyKn9GG-gczM-LLsF4pVL0rf0QYOSsuLkMYBKw7vGTVQNXtBhE7I_PKZxnJbrwRn8DE9ToHcmd9w-_QYDXCanDWtHqcARpFhigJljSXwM4Vy_JiLXhsqoEFbgaSzISXhtJfKWH9EkEf-m&state=60b8551a2928cb920abe75471cd9390806a04239068b4b8a" for ::1 at 2016-05-27 09:57:55 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDLIzh4WJEKbkiNjckhFVUX1amb1neRjyBqKlT1sXFyW1MmSdAs5mpnmfammmxE2zakdrybaxEa06BZWEES43ev2qezQys_rTha92FB5eCbfxaCtb0-2TtdBBJJd-h9TYWly7Vv34owXVWiSwtjjplP0Grp073j_mU_wUS87khlhu687K17MYha9brOqTA89qYm_xd0RJFqyKn9GG-gczM-LLsF4pVL0rf0QYOSsuLkMYBKw7vGTVQNXtBhE7I_PKZxnJbrwRn8DE9ToHcmd9w-_QYDXCanDWtHqcARpFhigJljSXwM4Vy_JiLXhsqoEFbgaSzISXhtJfKWH9EkEf-m", "state"=>"60b8551a2928cb920abe75471cd9390806a04239068b4b8a"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 161ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 09:57:55 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 70ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:08:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:08:52 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:08:52 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQBtJ235_tYmFY3Tvy0EUiSpnpt50PhbgGfuEezmE1UYCclxvPy2jqe6FhFfwaKH9Uh3e4674O7FLpKRG37gY_fu1VAlreNEfnG5YDMjKUOmhFKwPMk9W-EZYSzJgMP3FRxHXzeXSTyhHhsvPbQ_0w-SmVCH7yroGCpxoZHNm8icf4aICeaMJm_jaMNrxTv_Vs-uvqu0EUUpxjVOml45ULyTBOE2Ns280rQV0zN05hm8Z7p0QumXMbR6nt2SM0bVhE-x4nW6jV0FuytifVQ0fQSegcPubgHhU1bbviDDI9JNfn7eX42Efh5_BI3-JpVGL25wKhextIT0tEEIngIEWkq9&state=d15b5d9d5ec4739c2fcb1ac4c78da3df8a6e800b35a9b4bb" for ::1 at 2016-05-27 11:08:52 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBtJ235_tYmFY3Tvy0EUiSpnpt50PhbgGfuEezmE1UYCclxvPy2jqe6FhFfwaKH9Uh3e4674O7FLpKRG37gY_fu1VAlreNEfnG5YDMjKUOmhFKwPMk9W-EZYSzJgMP3FRxHXzeXSTyhHhsvPbQ_0w-SmVCH7yroGCpxoZHNm8icf4aICeaMJm_jaMNrxTv_Vs-uvqu0EUUpxjVOml45ULyTBOE2Ns280rQV0zN05hm8Z7p0QumXMbR6nt2SM0bVhE-x4nW6jV0FuytifVQ0fQSegcPubgHhU1bbviDDI9JNfn7eX42Efh5_BI3-JpVGL25wKhextIT0tEEIngIEWkq9", "state"=>"d15b5d9d5ec4739c2fcb1ac4c78da3df8a6e800b35a9b4bb"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 82ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 11:08:53 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:11:16 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `user_facebook_omniauth_authorize_path' for #<#<Class:0x007f95f4fb7570>:0x007f95f96425d0>):
+    13: <% else %>
+    14:   <%= link_to "Sign in", new_user_session_path %>
+    15:   <%= link_to "Sign up", new_user_registration_path %>
+    16:   <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+    17: <% end %>
+    18: 
+    19: 
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__3775275193300998611_70141069787760'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.9ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:13:23 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-27 11:13:23 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:13:24 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:13:24 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQAfsjn8MkfLQOai0P-S12hQvvf-nGOnRtTnM_St2KTcvPwS2XSnM3DwDl6WJbOjf5gWiq6W-I0FllrIZo-XMbEf4vrmHnCXYyGbezWyuSWwT3S4y1uNW5H8bdfvt2lWpvBy9JVR0uGekj_XK28xk6XLVhivpRhZJ4ndM2sxC4GjNwAYMb6J5O9oIukEYrqxrqH1WvpW0G8uJJMD9WnxgOXitSZx029t1bKMp0m0h1r3bd3mPGUosvcbs-gDinmyWHQoJkxXHuKzVE58ufsnd7I8ZdYfbKHb2HMkMlBc0ZhuO4rpym1o7DpJPbqQ-NI-3gWwnePdaPWnpyGIhSwTyCP4&state=cb291732b36305b00b2f090841afe3eabe179cda3323117e" for ::1 at 2016-05-27 11:13:24 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAfsjn8MkfLQOai0P-S12hQvvf-nGOnRtTnM_St2KTcvPwS2XSnM3DwDl6WJbOjf5gWiq6W-I0FllrIZo-XMbEf4vrmHnCXYyGbezWyuSWwT3S4y1uNW5H8bdfvt2lWpvBy9JVR0uGekj_XK28xk6XLVhivpRhZJ4ndM2sxC4GjNwAYMb6J5O9oIukEYrqxrqH1WvpW0G8uJJMD9WnxgOXitSZx029t1bKMp0m0h1r3bd3mPGUosvcbs-gDinmyWHQoJkxXHuKzVE58ufsnd7I8ZdYfbKHb2HMkMlBc0ZhuO4rpym1o7DpJPbqQ-NI-3gWwnePdaPWnpyGIhSwTyCP4", "state"=>"cb291732b36305b00b2f090841afe3eabe179cda3323117e"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 84ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 11:13:25 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 11:14:47 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `user_omniauth_authorize' for #<#<Class:0x007f95fb0d8930>:0x007f95f83627f8>):
+    13: <% else %>
+    14:   <%= link_to "Sign in", new_user_session_path %>
+    15:   <%= link_to "Sign up", new_user_registration_path %>
+    16:   <%= link_to "Sign in with Facebook", user_omniauth_authorize(:facebook) %>
+    17: <% end %>
+    18: 
+    19: 
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__3775275193300998611_70141045510000'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.9ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:14:50 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `user_omniauth_authorize' for #<#<Class:0x007f95f4fb7570>:0x007f95fb24bc40>):
+    13: <% else %>
+    14:   <%= link_to "Sign in", new_user_session_path %>
+    15:   <%= link_to "Sign up", new_user_registration_path %>
+    16:   <%= link_to "Sign in with Facebook", user_omniauth_authorize(:facebook) %>
+    17: <% end %>
+    18: 
+    19: 
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__3775275193300998611_70141045510000'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:17:58 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:18:12 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:18:12 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQDAKHYaPs5ZpbYr4tyFS4jqMG7oMBF1mlYuwsPj_bCfhNXlEPYqFJLxToZgEl43dNRD87lhArQftWVOIoqLN4L18F3mUtb1QatsIbX6x-zPW-ZN8-uDwDHmGhz7SsAqLetNKj0tGrKthqIy-Jx-2f-4ZYqLQAAiNofmH62QV2XikgSep4ye7Zprc42e1xq1kjdBN2CLaMG_WR8c4dT3v7qkVISmxhcCLHO7FPJbUvVK0oPzUWy0OSQTZy8zixGOm-jEJw1tbyQi6iUpmakvHl07NnZHCmFgUT5yCjiprXui_x0YL93CZpT8OVlO0UFKra7PeYiqlJHsOOxSpYpzeAe5&state=5faa69daeafef5648a1ac237f887954a381da87c66bb7340" for ::1 at 2016-05-27 11:18:12 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDAKHYaPs5ZpbYr4tyFS4jqMG7oMBF1mlYuwsPj_bCfhNXlEPYqFJLxToZgEl43dNRD87lhArQftWVOIoqLN4L18F3mUtb1QatsIbX6x-zPW-ZN8-uDwDHmGhz7SsAqLetNKj0tGrKthqIy-Jx-2f-4ZYqLQAAiNofmH62QV2XikgSep4ye7Zprc42e1xq1kjdBN2CLaMG_WR8c4dT3v7qkVISmxhcCLHO7FPJbUvVK0oPzUWy0OSQTZy8zixGOm-jEJw1tbyQi6iUpmakvHl07NnZHCmFgUT5yCjiprXui_x0YL93CZpT8OVlO0UFKra7PeYiqlJHsOOxSpYpzeAe5", "state"=>"5faa69daeafef5648a1ac237f887954a381da87c66bb7340"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 86ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 11:18:13 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:20:47 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:20:52 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:20:52 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQBRRf3A9hq24BILyCSpcS0muapmxFyFwfAh9FYlBdWkPCfmiF6U4QbX2a3OBB3wqwkq_gIzpqUvySoU5NFyrd01I5Pu5Rh6CSEKwXzOh8RZ7w8mqbSCXVMSHm74Rf8qpw2AIsNzzctLO7g5rHP77y7Tu9n4VKk1joynimv6blruRNWPqP-AFjvZmnMnKH9BCcgKiUcVG5TxOtInToS-ufNui_UDIq0YWzPDBbnsq8D37MfJL2V6GhHnx5uFdCKzrxLgrBGN8VjGuujSTp550hOgneR-NcoEs1pMGqoP0X1ULGz_ryeN5rNuLChc4jAdeCaRaQ4eigc2dSTgn0tavK1S&state=d07c014d520a61c57b3979dbf703e701aeef41d271e17222" for ::1 at 2016-05-27 11:20:52 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBRRf3A9hq24BILyCSpcS0muapmxFyFwfAh9FYlBdWkPCfmiF6U4QbX2a3OBB3wqwkq_gIzpqUvySoU5NFyrd01I5Pu5Rh6CSEKwXzOh8RZ7w8mqbSCXVMSHm74Rf8qpw2AIsNzzctLO7g5rHP77y7Tu9n4VKk1joynimv6blruRNWPqP-AFjvZmnMnKH9BCcgKiUcVG5TxOtInToS-ufNui_UDIq0YWzPDBbnsq8D37MfJL2V6GhHnx5uFdCKzrxLgrBGN8VjGuujSTp550hOgneR-NcoEs1pMGqoP0X1ULGz_ryeN5rNuLChc4jAdeCaRaQ4eigc2dSTgn0tavK1S", "state"=>"d07c014d520a61c57b3979dbf703e701aeef41d271e17222"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.2ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist at character 24
+: SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1):
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2016-05-27 11:21:26 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 368ms (Views: 347.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:21:27 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:21:27 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQC1lRH27Vu6DQdcZ7uuXq6Xh5ZKwSSfIVNbI849rSafZBgiXqCn_OoDkJsOD8ONcjaFxOIYzcFXXlz-bhgld4EQv0JvUsxvFi9OXmonXpmwM5IaBenQAJfavYZPP6I6ry2RdQhtDcUIg7O3jyldoouj0C6uBvSAq02hCQ0R5H3fBnKozvUDM_arHjte3N9ThVEt2-Vh4q5NoLcgsj03PYKw14YElaHXEGLcgCK1p82_mNopTR3_tRTlBuE8Z55pr--EuDpTRTT9jAFAEgE2u3VAgsnXw9LAsp_6dHMu6l-juTtbUmZWIQnaEs6RYiBj-yC0KtYaEFp2XNV2Lj5We2Np&state=0c17fd6363e6ccbca1f4fc07c263cf04596772549a032fb0" for ::1 at 2016-05-27 11:21:28 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQC1lRH27Vu6DQdcZ7uuXq6Xh5ZKwSSfIVNbI849rSafZBgiXqCn_OoDkJsOD8ONcjaFxOIYzcFXXlz-bhgld4EQv0JvUsxvFi9OXmonXpmwM5IaBenQAJfavYZPP6I6ry2RdQhtDcUIg7O3jyldoouj0C6uBvSAq02hCQ0R5H3fBnKozvUDM_arHjte3N9ThVEt2-Vh4q5NoLcgsj03PYKw14YElaHXEGLcgCK1p82_mNopTR3_tRTlBuE8Z55pr--EuDpTRTT9jAFAEgE2u3VAgsnXw9LAsp_6dHMu6l-juTtbUmZWIQnaEs6RYiBj-yC0KtYaEFp2XNV2Lj5We2Np", "state"=>"0c17fd6363e6ccbca1f4fc07c263cf04596772549a032fb0"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.4ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mSQL (6.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.0ms)[0m  DROP TABLE "restaurants" CASCADE
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "description" text) [0m
+  [1m[35m (3.7ms)[0m  DROP TABLE "reviews" CASCADE
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "reviews" ("id" serial primary key, "thoughts" text, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "restaurant_id" integer) [0m
+  [1m[35m (1.7ms)[0m  CREATE  INDEX  "index_reviews_on_restaurant_id" ON "reviews" USING btree ("restaurant_id")
+  [1m[36m (2.4ms)[0m  [1mALTER TABLE "reviews" ADD CONSTRAINT "fk_rails_8173017a90"
+FOREIGN KEY ("restaurant_id")
+  REFERENCES "restaurants" ("id")
+[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (19.0ms)[0m  DROP TABLE "restaurants" CASCADE
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "description" text) [0m
+  [1m[35m (3.5ms)[0m  DROP TABLE "reviews" CASCADE
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "reviews" ("id" serial primary key, "thoughts" text, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "restaurant_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_reviews_on_restaurant_id" ON "reviews" USING btree ("restaurant_id")
+  [1m[36m (1.9ms)[0m  [1mALTER TABLE "reviews" ADD CONSTRAINT "fk_rails_8173017a90"
+FOREIGN KEY ("restaurant_id")
+  REFERENCES "restaurants" ("id")
+[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2016-05-27 11:22:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 319ms (Views: 303.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:22:33 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:22:37 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:22:37 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQDii4prSXxZtMTjwREAvPPryQ6LRovdNt6hOjN5PUwHPpHWhKralqY3eB3-_Hxj8unTsM7bIuI_74RWh-ptkdHkvqURMjDnm4ZBN_jL4bcQEaLT5opVVboRrY5fO2JrlxGjSR7cdn-IFXzIuGqMPQBsDuMUG09o0FxxjaY463e9ISCPPflrgbIKBthhrIkehbf3hGRIc5LwtXDi_Zha4Hrk76900yFDbKDsqhhVqw0a4iI9sebrK8DQooGSHw1K05bPJtvFJS4b8-CqhexllSykx1ITISnS0uvgzGnJTvEU-sRY8CtPD6FUmIIy07bM3MOt0043cCPHhC1eeVmQS5uq&state=7635c0f1c708a74cc2bbe2190755cbdbbda2898120dde1ff" for ::1 at 2016-05-27 11:22:37 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDii4prSXxZtMTjwREAvPPryQ6LRovdNt6hOjN5PUwHPpHWhKralqY3eB3-_Hxj8unTsM7bIuI_74RWh-ptkdHkvqURMjDnm4ZBN_jL4bcQEaLT5opVVboRrY5fO2JrlxGjSR7cdn-IFXzIuGqMPQBsDuMUG09o0FxxjaY463e9ISCPPflrgbIKBthhrIkehbf3hGRIc5LwtXDi_Zha4Hrk76900yFDbKDsqhhVqw0a4iI9sebrK8DQooGSHw1K05bPJtvFJS4b8-CqhexllSykx1ITISnS0uvgzGnJTvEU-sRY8CtPD6FUmIIy07bM3MOt0043cCPHhC1eeVmQS5uq", "state"=>"7635c0f1c708a74cc2bbe2190755cbdbbda2898120dde1ff"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.9ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.8ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.1ms)
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRestaurants (20160524140840)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.8ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160524140840"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddDescriptionToRestaurants (20160525111005)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "restaurants" ADD "description" text[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160525111005"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReviews (20160526082551)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.3ms)[0m  [1mCREATE TABLE "reviews" ("id" serial primary key, "thoughts" text, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160526082551"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddRestaurantRefToReviews (20160526082723)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "reviews" ADD "restaurant_id" integer[0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_reviews_on_restaurant_id" ON "reviews"  ("restaurant_id")
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "reviews" ADD CONSTRAINT "fk_rails_8173017a90"
+FOREIGN KEY ("restaurant_id")
+  REFERENCES "restaurants" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160526082723"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20160526123743)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160526123743"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddOmniauthToUsers (20160526144952)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "provider" character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "uid" character varying
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160526144952"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2016-05-27 11:26:14 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 322ms (Views: 306.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:26:15 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:26:16 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:26:16 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQCSCSOOPhbU-QJLZe9QR54C6xDcWY3uA2_ffjRanXc6Zp-M8dFxNtsTH57Wk1lVxwX9fkjoiSTK6ft2f1hCP3wy7zIW9m3Mk19K5qsqnxFEkBAZR9aF_88113oVYLzcpF3PTZkbs23wV1RSTf60aRnYK4bKivo1hz5NaWQVG0VkjWMGMYBfmdYyRx71-yScCOubkfxeTUey2HDSnlGHfw1CDXH41lWMXxZ3tS9WJJ2uUGp-BsSQcc1C-zXa5r1mp3urKHkYw5PpmYo3unH2nAvdUnBA2PzMAZ0SK0jQD3KpMhlqRlejAmzPPOQ2P7F-A6a5HhS4m8FLyIBdD6wM-N-R&state=5e8c97a2e0132697363ace7673d19fdf9478f372a5a2dca8" for ::1 at 2016-05-27 11:26:16 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCSCSOOPhbU-QJLZe9QR54C6xDcWY3uA2_ffjRanXc6Zp-M8dFxNtsTH57Wk1lVxwX9fkjoiSTK6ft2f1hCP3wy7zIW9m3Mk19K5qsqnxFEkBAZR9aF_88113oVYLzcpF3PTZkbs23wV1RSTf60aRnYK4bKivo1hz5NaWQVG0VkjWMGMYBfmdYyRx71-yScCOubkfxeTUey2HDSnlGHfw1CDXH41lWMXxZ3tS9WJJ2uUGp-BsSQcc1C-zXa5r1mp3urKHkYw5PpmYo3unH2nAvdUnBA2PzMAZ0SK0jQD3KpMhlqRlejAmzPPOQ2P7F-A6a5HhS4m8FLyIBdD6wM-N-R", "state"=>"5e8c97a2e0132697363ace7673d19fdf9478f372a5a2dca8"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'macebake@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["provider", "facebook"], ["uid", "10208991184272478"], ["email", "macebake@gmail.com"], ["encrypted_password", "$2a$10$ZkW2akczvmcdwlEaqU3RN.lCxcdSFWJdQa/sgEsBNs2dx829j98E2"], ["created_at", "2016-05-27 10:26:17.889785"], ["updated_at", "2016-05-27 10:26:17.889785"]]
+  [1m[35m (5.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2016-05-27 10:26:17.899365"], ["current_sign_in_at", "2016-05-27 10:26:17.899365"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2016-05-27 10:26:17.901084"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 195ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:26:17 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-05-27 11:40:45 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2P5hHFMayumbbt3ECXGRGEEGR4xXX3cl2f8BXzi+ChkbipdSr4YQsDNxsntHAhfuQ/z4fmZRor9REkyiY/Qf3g=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:40:45 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2016-05-27 11:40:46 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2016-05-27 11:42:00 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-05-27 11:44:14 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-27 11:47:37 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-27 11:47:49 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /Users/maceybaker/.rvm/gems/ruby-2.2.3/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2016-05-27 11:50:18 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:52:40 +0100
+
+
+Started GET "/users/auth/facebook" for ::1 at 2016-05-27 11:52:40 +0100
+
+
+Started GET "/users/auth/facebook/callback?code=AQAtG4m8ps1XXkjo9D6PuQDWDE12L8q0o-em8c9hRYvq6jdGXY5ivRzn6xat8wP380cAYMQwn0sIzT3ubSF_2p60Y7xDZq-DjwUsbGUsBSLvzGQfyprTxGVhHxOjKrtrlpEFogz_HjOdeml-niqfO5TCbT3jKltkR23OZcRcHsqaeSC4eDzejD8MRarsZR5TBfA-QnhWGubW69wpKYJESX2XinFi_e90kAUH5RS9iFaeQ92xnbv5dKXOkPtIlCkqvT_r-2nCmkRjHXlqrAug1xCTYdABDcj0baey1Pxxl2HUjYenajh9Y2qymLn7IsuRIOB94fs8LaJDyTbNlDHBqsUM&state=677e41cef1161b11659eb5793ae2f151d1c07578271e605c" for ::1 at 2016-05-27 11:52:40 +0100
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAtG4m8ps1XXkjo9D6PuQDWDE12L8q0o-em8c9hRYvq6jdGXY5ivRzn6xat8wP380cAYMQwn0sIzT3ubSF_2p60Y7xDZq-DjwUsbGUsBSLvzGQfyprTxGVhHxOjKrtrlpEFogz_HjOdeml-niqfO5TCbT3jKltkR23OZcRcHsqaeSC4eDzejD8MRarsZR5TBfA-QnhWGubW69wpKYJESX2XinFi_e90kAUH5RS9iFaeQ92xnbv5dKXOkPtIlCkqvT_r-2nCmkRjHXlqrAug1xCTYdABDcj0baey1Pxxl2HUjYenajh9Y2qymLn7IsuRIOB94fs8LaJDyTbNlDHBqsUM", "state"=>"677e41cef1161b11659eb5793ae2f151d1c07578271e605c"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "facebook"], ["uid", "10208991184272478"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2016-05-27 10:52:40.913612"], ["sign_in_count", 2], ["updated_at", "2016-05-27 10:52:40.916507"], ["id", 1]]
+  [1m[35m (6.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:52:40 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2016-05-27 11:52:47 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/restaurants" for ::1 at 2016-05-27 11:52:52 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sn4idYccLtv44jvuxSpZAMdvOva9xo+iwGSQw+Kf62SyBM8Ss2Q44+6a/smMipnRHJF3PdXQn8NkLA9sBJJVCA==", "restaurant"=>{"name"=>"this is a cool restaurant", "rating"=>"4"}, "commit"=>"Add"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'this is a cool restaurant' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "restaurants" ("name", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "this is a cool restaurant"], ["rating", 4], ["created_at", "2016-05-27 10:52:52.947374"], ["updated_at", "2016-05-27 10:52:52.947374"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 11ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-05-27 11:52:52 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-05-27 11:52:56 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"x+2jCOI/oGhkE0XXX/GviGn7FdYIWDRria/Wyr1oErc/l05v1ke2UHJrgPAWUW9ZsgVYHWBOJAot50llW2Ws2w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 11:52:56 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.8ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2016-05-27 11:58:38 +0100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/restaurants/1" for ::1 at 2016-05-27 12:00:12 +0100
+Processing by RestaurantsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+u/+4bmhZqG/vkROhPXAMxXF/PqfX/eab4NeDxLfVO7eXoiQ9MuAqOkBT6tbzdkdu1nkBl/zuPU9KCyhjraO5g==", "restaurant"=>{"name"=>"not cool", "rating"=>"3", "description"=>"hfdiosa"}, "commit"=>"Update restaurant", "id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE ("restaurants"."name" = 'not cool' AND "restaurants"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "restaurants" SET "name" = $1, "rating" = $2, "description" = $3, "updated_at" = $4 WHERE "restaurants"."id" = $5  [["name", "not cool"], ["rating", 3], ["description", "hfdiosa"], ["updated_at", "2016-05-27 11:00:12.096101"], ["id", 1]]
+  [1m[36m (6.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 15ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-05-27 12:00:12 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-05-27 12:00:16 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.6ms)
